@@ -1,0 +1,160 @@
+@font-face {
+    font-family: Ban;
+    src: url(ofont.ru_Banff.ttf);
+}
+* {
+    margin: 0;
+}
+.afterhead {
+    font-family: Ban;
+    color: whitesmoke;
+    font-size: 36px;
+    height: 300px;
+    width: 100%;
+    background: url(night1.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.line {background: rgba(1, 10, 17, 0.99); width: 100%; border-bottom: thick double whitesmoke;}
+.afterhead span {width: 300px;}
+.beforefoot {
+    font-family: Ban;
+    color: whitesmoke;
+    font-size: 36px;
+    height: 450px;
+    width: 100%;
+    background: url(night2.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-end;
+}
+.all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(1, 10, 17, 0.99);
+}
+.MainContent {
+    width: 850px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    box-shadow: 0 0 1rem 0 rgba(41, 39, 39, 0.2);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+.MainContent:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgb(146, 233, 255);
+    filter: blur(10px);
+    margin: -20px;
+}
+#yandexmap0, #yandexmap1, #yandexmap2 {
+    width: 375px;
+    height: 500px;
+}
+#gallery0, #gallery1, #gallery2 {
+    width: 375px;
+    height: 500px;
+    position: relative;
+    animation: round 60s infinite;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes round
+{
+    0% { opacity: 0; }
+    4% { opacity: 1; background-image:url(slide1/IMG_6459.JPG);}
+    8% { opacity: 0; }
+    12% { opacity: 1; background-image:url(slide1/IMG_6460.JPG);}
+    16% { opacity: 0; }
+    20% { opacity: 1; background-image:url(slide1/IMG_6462.JPG);}
+    24% { opacity: 0; }
+    28% { opacity: 1; background-image:url(slide1/IMG_6463.JPG);}
+    32% { opacity: 0; }
+    36% { opacity: 1; background-image:url(slide1/IMG_6464.JPG);}
+    40% { opacity: 0; }
+    44% { opacity: 1; background-image:url(slide1/IMG_6465.JPG);}
+    48% { opacity: 0; }
+    52% { opacity: 1; background-image:url(slide1/IMG_6466.JPG);}
+    56% { opacity: 0; }
+    60% { opacity: 1; background-image:url(slide1/IMG_6471.JPG);}
+    64% { opacity: 0; }
+    68% { opacity: 1; background-image:url(slide1/IMG_64671.JPG);}
+    72% { opacity: 0; }
+    76% { opacity: 1; background-image:url(slide1/IMG_64691.JPG);}
+    80% { opacity: 0; }
+    84% { opacity: 1; background-image:url(slide1/IMG_64721.JPG);}
+    88% { opacity: 0; }
+    92% { opacity: 1; background-image:url(slide1/IMG_64731.JPG);}
+    100% { opacity: 0; }
+}
+
+#gallery1 {
+    animation: round1 60s infinite;
+}
+
+@keyframes round1
+{
+    0% { opacity: 0; }
+    4% { opacity: 1; background-image:url(slide2/IMG_6333.JPG);}
+    8% { opacity: 0; }
+    12% { opacity: 1; background-image:url(slide2/IMG_6343.JPG);}
+    16% { opacity: 0; }
+    20% { opacity: 1; background-image:url(slide2/IMG_6345.JPG);}
+    24% { opacity: 0; }
+    28% { opacity: 1; background-image:url(slide2/IMG_6346.JPG);}
+    32% { opacity: 0; }
+    36% { opacity: 1; background-image:url(slide2/IMG_6366.JPG);}
+    40% { opacity: 0; }
+    44% { opacity: 1; background-image:url(slide2/IMG_6413.JPG);}
+    48% { opacity: 0; }
+    52% { opacity: 1; background-image:url(slide2/IMG_6419.JPG);}
+    56% { opacity: 0; }
+    60% { opacity: 1; background-image:url(slide2/IMG_6432.JPG);}
+    64% { opacity: 0; }
+    68% { opacity: 1; background-image:url(slide2/IMG_6436.JPG);}
+    72% { opacity: 0; }
+    76% { opacity: 1; background-image:url(slide2/IMG_6476.JPG);}
+    80% { opacity: 0; }
+    84% { opacity: 1; background-image:url(slide2/IMG_6478.JPG);}
+    88% { opacity: 0; }
+    92% { opacity: 1; background-image:url(slide2/IMG_6479.JPG);}
+    100% { opacity: 0; }
+}
+
+#gallery2 {
+    animation: round2 20s infinite;
+}
+
+@keyframes round2
+{
+    0% { opacity: 0; }
+    12% { opacity: 1; background-image:url(tab1/IMG_8664.JPG);}
+    24% { opacity: 0; }
+    36% { opacity: 1; background-image:url(tab1/IMG_8690.JPG);}
+    48% { opacity: 0; }
+    60% { opacity: 1; background-image:url(tab1/IMG_8725.JPG);}
+    72% { opacity: 0; }
+    84% { opacity: 1; background-image:url(tab1/IMG_8731.JPG);}
+    100% { opacity: 0; }
+}
